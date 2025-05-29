@@ -1,14 +1,20 @@
 body {
     background-image: url(https://img.texasmonthly.com/2025/05/BBQ-FEATURED-GWS.jpg?auto=compress&crop=faces&fit=fit&fm=pjpg&ixlib=php-3.3.1&q=45);
+    background-position: top left;
+    animation: mymove 20s infinite;
+}
+
+@keyframes mymove {
+    0% {background-position: center;}
+    50% { background-position: bottom left;}
+    75% {background-position: bottom right;}
+    100% {background-position: center;}
 }
 
 .fs-4 {
     color: white;
 }
 
-.nav{
-    color: white;
-}
 
 
 .container {
@@ -33,4 +39,9 @@ main {
 
 span {
     color: white;
+}
+
+.social-media {
+    width: 50px;
+    height: 30px;
 }
