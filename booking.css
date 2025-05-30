@@ -1,0 +1,106 @@
+@keyframes movingbg {
+    0% {background-position: top left;}
+    25% {background-position: top right}
+    50% {background-position: bottom left;}
+    75% {background-position: bottom right}
+    100% {background-position: center;}
+}
+body {
+    background-image: url(https://img.texasmonthly.com/2021/10/top-50-bbq-joints-list-feature.jpg?auto=compress&crop=faces&fit=fit&fm=pjpg&ixlib=php-3.3.1&q=45);
+    animation: movingbg 20s infinite;
+}
+.container {
+    border: 2px solid red;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    padding-left: 150px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: black;
+    opacity: 0.8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+label{
+    font-size: 20px;
+    color: white;
+}
+
+.input {
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+button {
+    margin-left: 630px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;   
+}
+
+.submit {
+    margin-left: 100px;
+}
+
+#submit {
+    background-color: red;
+    color: white;
+}
+
+/* Modal styling */
+.hidden {
+    display: none;
+  }
+  
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+  
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
