@@ -54,10 +54,11 @@ span {
 .arrows {
     background-color: black;
     color: white;
+    font-size: 50px;
     border-radius: 50%;
     border: white;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     outline: none;
     position: absolute;
     cursor: pointer;
