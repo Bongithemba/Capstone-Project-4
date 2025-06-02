@@ -90,3 +90,7 @@ span {
     display: table;
     clear: both;
 }
+
+figcaption {
+    font-size: 2rem;
+}

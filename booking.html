@@ -12,55 +12,61 @@
 <body>
     <h1>Make a booking</h1>
         <div class="container">
-            <div class="names">
-                <label for="fname">First Name:</label><br>
-                <input type="text" class="input" placeholder="Enter first name..." name="fname" value=""><br><br>
-                <label for="lname">Last Name:</label><br>
-                <input type="text" class="input" placeholder="Enter last name" name="lname" value=""><br><br>
-            </div>
-            <div class="contact-info">
-                <label for="cell-no">Cell:</label><br>
-                <input type="tel" class="input" placeholder="0731234567" name="cell-no" value=""><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" class="input" placeholder="name@domain.com" name="email" value="">
-            </div><br>
-            <b></b>
-            <div class="details">
-                <label for="persons">Number of people:</label>
-                <select name="persons">
-                    <option value="1">2 Persons</option>
-                    <option value="2">3 Persons</option>
-                    <option value="3">4 Persons</option>
-                    <option value="4">5 Persons</option>
-                </select><br><br>
+            <form id="frm1" target="./booking.html">
+                <div class="names">
+                    <label for="first-name">First Name:</label><br>
+                    <input type="text" class="input" placeholder="Enter first name..." id="first-name" name="first-name" value=""><br><br>
+                    <label for="last-name">Last Name:</label><br>
+                    <input type="text" class="input" placeholder="Enter last name" name="last-name" id="last-name" value=""><br><br>
+                </div>
+                <div class="contact-info">
+                    <label for="cell-no">Cell:</label><br>
+                    <input type="tel" class="input" placeholder="0731234567" name="cell-no" id="cell-no" value=""><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" class="input" placeholder="name@domain.com" name="email" value="" id="email">
+                </div><br>
+                <b></b>
+                <div class="details">
+                    <label for="persons">Number of people:</label>
+                    <select name="persons" id="persons">
+                        <option value="2 Persons">2 Persons</option>
+                        <option value="3 Persons">3 Persons</option>
+                        <option value="4 Persons">4 Persons</option>
+                        <option value="5 Persons">5 Persons</option>
+                    </select><br><br>
 
-                <label for="dt">Date:</label><br>
-                <input type="date" class="input" name="dt" value="2025/01/01"><br><br>
-                <label for="tm">Time:</label><br>
-                <input type="time" class="input" name="tm" value="18:00">
-            </div><br>
+                    <label for="date">Date:</label><br>
+                    <input type="date" class="input" name="date" id="date" value=""><br><br>
+                    <label for="time">Time:</label><br>
+                    <input type="time" class="input" name="time" id="time" value="18:00">
+                </div><br>
 
-            <div class="submit">
-                <input id="submit" type="submit" onclick="openModal()">
-            </div>
+                <div class="submit">
+                    <input id="submit" type="submit" onclick="openModal()">
+                </div>
+            </form>
 
         </div><br>
     <button><a href="./index.html">Home</a></button>
 
-    <!-- Modal -->
+    <!-- Details Modal -->
     <div class="modal hidden">
         <button class="close-modal" onclick="closeModal()">&times;</button>
-        <h1>I'm a modal window 😍</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
+        <h1 class="modal-heading">Confirm Booking</h1>
+        <p class="info">
         </p>
-      </div>
+        <div class="buttons">
+            <button class="confirm" onclick="openConfirmModal()">Confirm</button>
+            <button class="cancel" onclick="resetValues()">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="confirm-modal hidden">
+      <button class="close-modal" onclick="closeConfirmModal()">&times;</button>
+      <h1 class="modal-heading">Booking Confirmed</h1>
+      <button onclick="closeConfirmModal()" class="ok"><a href="./index.html">Ok</a></button>
+    </div>
       <div class="overlay hidden"></div>
     
 <script src="booking.js">

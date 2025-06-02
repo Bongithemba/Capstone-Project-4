@@ -1,6 +1,6 @@
 //Photo albu that is displayed on the landing page/
 var slideIndex = 1;
-showIndex(slideIndex);
+// showIndex(slideIndex);
 
 function plusDivs(n){
     showDivs(slideIndex += n);
