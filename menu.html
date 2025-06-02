@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=81236&format=png&color=000000">
+    <link href="menu.css" rel="stylesheet">
+    <title>Menu</title>
+</head>
+<body>
+    <header><h1>Menu</h1></header>
+    <main>
+        <section class="gallery">
+            <figure><img id="fma" class="photo" onclick="openModal(0)" src="https://bakeitwithlove.com/wp-content/uploads/2022/07/baked-bbq-sausage-h.jpg.webp" alt="Sausage and Mash Potatoes"/><figcaption>Saucy Suasage with mash potatoes</figcaption></figure>
+            <figure><img id="hxh" class="photo" onclick="openModal(1)" src="https://www.womansworld.com/wp-content/uploads/2025/07/smash-burgers.jpg?w=1200&h=630&crop=1&quality=86&strip=all" alt="Smash Burger"/><figcaption>Smash Burger</figcaption></figure>
+            <figure><img id="berserk" class="photo" onclick="openModal(2)" src="https://www.seriouseats.com/thmb/5sVbb2pB97IvOmPHEMsDBXIiAuA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__04__20190322-sous-vide-wings-joel-russo-14-98ddac888aad49b18ed6639f443d7e51.jpg" alt="Buffalo Wings"/><figcaption>Buffalo Wings</figcaption></figure>
+            <figure><img id="naruto" class="photo" onclick="openModal(3)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm3K4vttsxCZfR8Yns8-_wrnvSQNpkD3Awug&s" alt="Beef Dino Ribs"/><figcaption>Beef Dino Ribs</figcaption></figure>
+            <figure><img id="kaiju" class="photo" onclick="openModal(4)" src="https://www.charleys.com/wp-content/uploads/2021/09/74750388cbe24276a50bfc0b10b91901.jpg" alt="Kaiju no. 8"/><figcaption>Loaded Fries</figcaption></figure>
+            <figure><img id="dan" class="photo" onclick="openModal(5)" src="https://www.heathrilesbbq.com/cdn/shop/articles/3_3c6cddb2-ff53-4fb4-9408-0d0205ebc2f3.png?v=1740776919" alt="ribeye steak"/><figcaption>Ribeye Steak</figcaption></figure>
+        </section>
+
+          <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-image" src="" alt="">
+        <p id="modal-caption"></p>
+        <div class="buttons">
+        <button class="prev" onclick="changePhoto(-1)">&#10094;</button>
+        <button class="next" onclick="changePhoto(1)">&#10095;</button>
+        </div>
+        </div>
+    </div>
+
+    </main>
+
+    <button class="home-btn"><a href="./index.html">Home</a></button>
+    
+
+    <script src="menu.js"></script>
+</body>
+</html>
