@@ -1,11 +1,14 @@
 @keyframes move-bg {
-    0% {background-position: center};
-    50% {background-position: bottom right};
-    100% {background-position: top left;}
+    0% {background-position: top left;};
+    25%{background-position: center;}
+    50% {background-position: bottom left};
+    75% {background-position: top right;}
+    100% {background-position: center;}
 }
 
 body {
-    background-image: url("https://plus.unsplash.com/premium_photo-1693221705350-beb2c2c8778b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmJxfGVufDB8fDB8fHww");
+    background-image: url(https://plus.unsplash.com/premium_photo-1693221705350-beb2c2c8778b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmJxfGVufDB8fDB8fHww);
+    background-position: center;
     animation: move-bg 10s infinite;
 }
 
