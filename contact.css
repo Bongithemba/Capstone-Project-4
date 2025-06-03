@@ -1,20 +1,21 @@
-@keyframes mv {
-    0% {background-position: top left;};
-    25% {background-position: center;};
-    50% {background-position: top right;};
-    75% {background-position: bottom right;};
-    100% {background-position: bottom left;};  
+body {
+    background-image: url(https://images.unsplash.com/photo-1555939594-58d7cb561ad1?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFyYmVxdWV8ZW58MHx8MHx8fDA%3D);
+    background-position: top left;
+    animation: mv 30s infinite;
 }
 
 
-body {
-    background-image: url(https://images.unsplash.com/photo-1555939594-58d7cb561ad1?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFyYmVxdWV8ZW58MHx8MHx8fDA%3D);
-    animation: mv 10s infinite;
+@keyframes mv {
+    0% {background-position: top left;}
+    25% {background-position: center;}
+    50% {background-position: top right;}
+    75% {background-position: bottom right;}
+    100% {background-position: bottom left;} 
 }
 
 .container {
     border: 2px solid red;
-    width: 80vw;
+    width: 60vw;
     margin: auto auto;
     padding: 20px;
     border-radius: 10%;
@@ -22,6 +23,7 @@ body {
     color: white;
     margin-top: 20px;
     margin-bottom: 20px;
+    opacity: 0.8;
 }
 
 h1 {

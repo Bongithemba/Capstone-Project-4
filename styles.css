@@ -17,7 +17,7 @@ body {
 
 .photos {
     width: 35%;
-    border: 5px solid white;
+    border: 5px solid black;
     border-radius: 20px;
 }
 
@@ -53,13 +53,13 @@ span {
 
 .arrows {
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.8;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     border-radius: 50%;
     border: white;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     outline: none;
     position: absolute;
     cursor: pointer;

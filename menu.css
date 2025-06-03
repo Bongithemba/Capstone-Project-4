@@ -26,7 +26,7 @@ header {
     text-align: center;
     border-radius: 10px;
     font-size: 30px;
-    color: black;
+    color: red;
     position: sticky;
     top: -10px;
     height: 100px;
@@ -34,7 +34,8 @@ header {
     margin: auto;
     background: linear-gradient(300deg, #914F1E, #DEAC80, #F7DCB9);
     background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;   
+    animation: gradient-animation 18s ease infinite; 
+    border: 3px solid red;   
 }
 
 #modal-image{
@@ -82,11 +83,17 @@ footer  {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: black;
+    color: white;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid red;
     width: 60%; /* Could be more or less, depending on screen size */
+}
+
+.modal-caption {
+    line-height: 1.3rem;
+    font-size: 1.4rem;
 }
 
 /* The Close Button */
@@ -137,8 +144,11 @@ img {
 }
 
 img:hover {
-    border: 3px solid yellow;
+    border: 3px solid red;
     cursor: pointer;
+    box-shadow:10px 10px;
+    width: 550px;
+    height: 350px;
 }
 
 

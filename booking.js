@@ -4,9 +4,14 @@
 function openModal() {
     const modal = document.querySelector('.modal');
     const overlay = document.querySelector(".overlay");
-    modal.style.display = 'block';
-    overlay.style.display = "block";
-
+    var valid = validateForm();
+    if (valid == true){
+      modal.style.display = 'block';
+      overlay.style.display = "block";
+    }
+    else {
+      alert("All areas must be filled out");
+    }
   }
 
 function resetValues() {
@@ -52,7 +57,25 @@ form.addEventListener("submit", function(event) {
   for (const [key, value] of formData) {
     let info = document.querySelector(".info");
     info.innerHTML += `${key}: ${value} <br>`; //display data in modal
+    console.log(`${key}: ${value} <br>`); //log the data in the console as well
   }
 });
-
 //*************End**************************** */
+
+
+//Form Validation
+function validateForm() {
+  var fname = document.forms["frm1"]["first-name"].value;
+  var lname = document.forms["frm1"]["last-name"].value;
+  var cell = document.forms["frm1"]["cell-no"].value;
+  var email = document.forms["frm1"]["email"].value;
+  var persons = document.forms["frm1"]["persons"].value;
+  var date = document.forms["frm1"]["date"].value;
+  var time = document.forms["frm1"]["time"].value;
+  if (fname == "" || lname == "" || cell == "" || email == "" || persons == "" || date == ""|| time == "") {
+    return false;
+  }
+  else {
+    return true;
+  }
+}

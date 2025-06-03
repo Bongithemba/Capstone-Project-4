@@ -15,20 +15,20 @@
             <form id="frm1" target="./booking.html">
                 <div class="names">
                     <label for="first-name">First Name:</label><br>
-                    <input type="text" class="input" placeholder="Enter first name..." id="first-name" name="first-name" value=""><br><br>
+                    <input type="text" class="input" placeholder="Enter first name..." id="first-name" name="first-name" value="" required><br><br>
                     <label for="last-name">Last Name:</label><br>
-                    <input type="text" class="input" placeholder="Enter last name" name="last-name" id="last-name" value=""><br><br>
+                    <input type="text" class="input" placeholder="Enter last name" name="last-name" id="last-name" value="" required><br><br>
                 </div>
                 <div class="contact-info">
                     <label for="cell-no">Cell:</label><br>
-                    <input type="tel" class="input" placeholder="0731234567" name="cell-no" id="cell-no" value=""><br><br>
+                    <input type="tel" class="input" placeholder="0731234567" name="cell-no" id="cell-no" value="" required><br><br>
                     <label for="email">Email:</label><br>
-                    <input type="email" class="input" placeholder="name@domain.com" name="email" value="" id="email">
+                    <input type="email" class="input" placeholder="name@domain.com" name="email" value="" id="email" required>
                 </div><br>
                 <b></b>
                 <div class="details">
                     <label for="persons">Number of people:</label>
-                    <select name="persons" id="persons">
+                    <select name="persons" id="persons" required>
                         <option value="2 Persons">2 Persons</option>
                         <option value="3 Persons">3 Persons</option>
                         <option value="4 Persons">4 Persons</option>
@@ -36,9 +36,9 @@
                     </select><br><br>
 
                     <label for="date">Date:</label><br>
-                    <input type="date" class="input" name="date" id="date" value=""><br><br>
+                    <input type="date" class="input" name="date" id="date" value="" required><br><br>
                     <label for="time">Time:</label><br>
-                    <input type="time" class="input" name="time" id="time" value="18:00">
+                    <input type="time" class="input" name="time" id="time" value="18:00" required>
                 </div><br>
 
                 <div class="submit">
@@ -65,6 +65,7 @@
     <div class="confirm-modal hidden">
       <button class="close-modal" onclick="closeConfirmModal()">&times;</button>
       <h1 class="modal-heading">Booking Confirmed</h1>
+      <p class="modal-phrase"><i>A confirmation email will be sent to you shortly.</i></p>
       <button onclick="closeConfirmModal()" class="ok"><a href="./index.html">Ok</a></button>
     </div>
       <div class="overlay hidden"></div>
