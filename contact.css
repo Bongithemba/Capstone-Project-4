@@ -1,0 +1,53 @@
+@keyframes mv {
+    0% {background-position: top left;};
+    25% {background-position: center;};
+    50% {background-position: top right;};
+    75% {background-position: bottom right;};
+    100% {background-position: bottom left;};  
+}
+
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1555939594-58d7cb561ad1?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFyYmVxdWV8ZW58MHx8MHx8fDA%3D);
+    animation: mv 10s infinite;
+}
+
+.container {
+    border: 2px solid red;
+    width: 80vw;
+    margin: auto auto;
+    padding: 20px;
+    border-radius: 10%;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+}
+
+.home-btn {
+    background-color: black;
+    color: white;
+    margin-left: 630px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
