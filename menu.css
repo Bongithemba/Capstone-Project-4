@@ -18,7 +18,7 @@
 
 
 body {
-    background-color: black;
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWV5a3NxcDhpNGxvc3ppdm9tY3phc3J0dTBqZjcxNW9yejU1aG9yciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QjuFNYKiGXZpTA1mQe/giphy.gif");
 
 }
 
@@ -86,7 +86,7 @@ footer  {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 60%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
