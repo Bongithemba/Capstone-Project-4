@@ -49,8 +49,8 @@ header {
 }
 
 .home-btn {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     margin-left: 630px;
     padding: 10px;
     width: 100px;
@@ -59,7 +59,7 @@ header {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 
@@ -89,12 +89,12 @@ footer  {
     padding: 20px;
     border: 1px solid red;
     width: 60%; /* Could be more or less, depending on screen size */
-}
-
-.modal-caption {
     line-height: 1.3rem;
     font-size: 1.4rem;
+    border-radius: 5%;
 }
+
+
 
 /* The Close Button */
 .close {

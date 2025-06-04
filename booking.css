@@ -164,5 +164,11 @@ a {
     margin-left: 300px;
 }
 
-
+.home-btn {
+    background-color: black;
+    color: white;
+    margin-left: 630px;
+    width: 100px;
+    border-radius: 10px;
+}
 
